@@ -1,6 +1,9 @@
-# product-page
 <?php
-
+/**
+ *
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
 namespace Magento\Catalog\Controller\Product;
 
 use Magento\Framework\App\Action\HttpPostActionInterface as HttpPostActionInterface;
@@ -68,7 +71,6 @@ class View extends ProductAction implements HttpGetActionInterface, HttpPostActi
     }
 
     /**
-
      * Product view action
      *
      * @return \Magento\Framework\Controller\Result\Forward|\Magento\Framework\Controller\Result\Redirect
@@ -109,8 +111,6 @@ class View extends ProductAction implements HttpGetActionInterface, HttpPostActi
         $params = new \Magento\Framework\DataObject();
         $params->setCategoryId($categoryId);
         $params->setSpecifyOptions($specifyOptions);
-
-
 
         // Render page
         try {
